@@ -1,0 +1,88 @@
+.header {
+    background-color: #0077b6; /* Travel adventure theme: Ocean blue */
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff; /* White text for contrast */
+}
+
+.header-title {
+    margin: 0 auto; /* Center the title */
+    font-size: 1.8rem;
+    color: #ffffff; /* White text */
+    text-align: center;
+    font-family: 'Georgia', serif; /* Travel-inspired font */
+}
+
+.nav-menu {
+    margin-left: 0; /* Align menu items to the left */
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-right: 1rem;
+}
+
+.nav-menu li button {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-menu li button:hover {
+    color: #caf0f8; /* Light blue hover effect */
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #0077b6; /* Same as header background */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .nav-menu.open {
+        display: block;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        text-align: left; /* Align menu items to the left */
+        padding: 1rem;
+    }
+
+    .nav-menu li {
+        margin: 0.5rem 0;
+    }
+}

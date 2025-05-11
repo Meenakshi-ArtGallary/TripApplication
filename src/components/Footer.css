@@ -1,0 +1,15 @@
+.footer {
+    background-color: #0077b6; /* Same Ocean blue as the header */
+    color: #ffffff; /* White text for contrast */
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Georgia', serif; /* Travel-inspired font */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.footer-text {
+  margin: 0 auto; /* Center the title */
+    font-size: 0.8rem;
+    color: #ffffff; /* White text */
+    text-align: center;
+    font-family: 'Georgia', serif; /* Travel-inspired font */
+}
