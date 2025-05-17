@@ -1,7 +1,20 @@
-.App {
+/* .App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #f0f0f0; /* Consistent background color */
+  background-color: #f0f0f0; 
+} */
+
+body, html, #root, .app {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 

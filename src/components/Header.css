@@ -1,4 +1,9 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
     background-color: #0077b6; /* Travel adventure theme: Ocean blue */
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -56,33 +61,26 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.5rem;
     }
-
-    .nav-menu {
-        display: none;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #0077b6; /* Same as header background */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
+    .content-inner {
+        font-size: 1rem;
     }
-
-    .nav-menu.open {
-        display: block;
+    .footer p {
+        font-size: 0.8rem;
     }
+}
 
-    .nav-menu ul {
-        flex-direction: column;
-        text-align: left; /* Align menu items to the left */
-        padding: 1rem;
+@media (min-width: 1920px) {
+    .header h1 {
+        font-size: 3rem;
     }
-
-    .nav-menu li {
-        margin: 0.5rem 0;
+    .content-inner {
+        font-size: 2rem;
+    }
+    .footer p {
+        font-size: 1.5rem;
     }
 }

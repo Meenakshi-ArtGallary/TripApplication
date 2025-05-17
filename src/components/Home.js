@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react';
-//Import local images
+import './Home.css';
 
 
 
@@ -11,7 +11,7 @@ function Home() {
 const images = Array.from({ length: 225 }, (_, i) => `${process.env.PUBLIC_URL}/tripimage/yercaudtrip${i+1}.jpg`);
 
 // Print the images in console
-console.log(images);
+//console.log(images);
 
 // State to track current image index
 const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,7 +39,7 @@ useEffect(() => {
       <img
         src={images[currentIndex]}
         alt={`Slideshow ${currentIndex + 1}`}
-        style={{ width: '330px', height: '330px', borderRadius: '15px', objectFit: 'cover', animation: 'fade 1s ease-in-out' }}
+        style={{width: '320px', height: '320px',borderRadius : '15px',objectFit : 'cover', animation: 'fade 1s ease-in-out'}}
       />
     </div>
     
